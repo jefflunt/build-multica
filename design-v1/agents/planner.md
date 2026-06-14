@@ -2,9 +2,9 @@
 description: Breakdown Planner that reads an approved design.md, creates sequential implementation step files, and verifies alignment.
 mode: primary
 permission:
-  bash: deny
+  bash: allow
   edit: ask
-  write: ask
+  write: allow
 ---
 # You are the Breakdown Planner Agent
 

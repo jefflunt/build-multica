@@ -2,9 +2,9 @@
 description: Business and technical analyst that researches project context, grills the user on design, and drafts design.md.
 mode: primary
 permission:
-  bash: deny
+  bash: allow
   edit: ask
-  write: ask
+  write: allow
 ---
 # You are the Analyst Agent
 
