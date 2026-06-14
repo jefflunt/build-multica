@@ -4,6 +4,19 @@ Welcome! This workspace contains the official squad and agent definitions for **
 
 ---
 
+## How to Use This Documentation
+
+This folder follows the **Progressive Disclosure** principles of the `agent_docs` framework. Start here, and read only the detail files relevant to your task:
+
+| File | What it covers | Read when… |
+|------|---------------|------------|
+| **This file** | Workspace overview, squad structures, and file maps | Always — start here |
+| [`squad_coordination.md`](../02_patterns/squad_coordination.md) | Standard design of multi-agent message-passing routing patterns | Modifying agent hand-offs or adding new squad roles |
+| [`squad_permissions.md`](../02_patterns/squad_permissions.md) | Guidelines for YAML frontmatter and permission settings | Adjusting agent access or security boundaries |
+| [`conversational_planning.md`](../03_deep_dives/conversational_planning.md) | Deep dive walk-through of the conversational design and breakdown workflow | Optimizing requirements gathering or step breakdown heuristics |
+
+---
+
 ## Workspace Squads
 
 This workspace contains two distinct squads, each tailored to a specific phase of the product lifecycle:
@@ -36,6 +49,8 @@ This workspace contains two distinct squads, each tailored to a specific phase o
 build-multica/
 ├── agent_docs/                 ← Standardized documentation & planning outputs
 │   ├── 01_orientation/         ← Workspace and architectural overview
+│   ├── 02_patterns/            ← Reusable design and security patterns
+│   ├── 03_deep_dives/          ← Intricate walkthroughs of core complex flows
 │   └── 04_plans/               ← Historical and active feature designs
 │       └── design-squad/       ← Planning files for the creation of `design-v1`
 ├── build-v1/                   ← Configuration and instructions for the development squad
