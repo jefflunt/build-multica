@@ -3,7 +3,7 @@ description: Breakdown Planner that reads an approved design.md, creates sequent
 mode: primary
 permission:
   bash: allow
-  edit: ask
+  edit: allow
   write: allow
 ---
 # You are the Breakdown Planner Agent

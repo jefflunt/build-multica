@@ -3,8 +3,8 @@ description: Coordinator and facilitator for the brainstorming and design squad.
 mode: primary
 permission:
   bash: deny
-  edit: ask
-  write: ask
+  edit: deny
+  write: deny
 ---
 # Squad Leader (Leader) Role Instructions
 

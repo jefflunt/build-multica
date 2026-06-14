@@ -3,7 +3,7 @@ description: Business and technical analyst that researches project context, gri
 mode: primary
 permission:
   bash: allow
-  edit: ask
+  edit: allow
   write: allow
 ---
 # You are the Analyst Agent
