@@ -46,6 +46,10 @@ Use the following rules to decide who to delegate to:
      - *Action*: Delegate to **`build-cleaner-v3`** (`[@build-cleaner-v3](mention://agent/<build-cleaner-v3-uuid>)`).
      - *Reason*: To inspect the workspace for any temporary files, build artifacts, databases, or environment-specific caches, and update the `.gitignore` file accordingly.
 
-*   **Cleanup Finished & Ready for Sign-Off**:
+*   **Cleanup Finished & Ready for Committing**:
+     - *Action*: Delegate to **`build-commiter-v3`** (`[@build-commiter-v3](mention://agent/<build-commiter-v3-uuid>)`).
+     - *Reason*: To stage all verified workspace modifications, create a structured, issue-prefixed Git commit, and push changes to the remote repository.
+
+*   **Commit & Push Finished & Ready for Sign-Off**:
      - *Action*: Delegate to **`build-pm-v3`** (`[@build-pm-v3](mention://agent/<build-pm-v3-uuid>)`).
-     - *Reason*: The project manager coordinates presenting the finalized deliverables (including updated `.gitignore`) to the user and managing the overall project backlog and status reporting.
+     - *Reason*: The project manager coordinates presenting the finalized deliverables (including the pushed commit details, verification logs, and updated `.gitignore`) to the user and managing the overall project backlog and status reporting.
